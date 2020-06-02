@@ -1,0 +1,60 @@
+@import (less, reference) "~bootstrap/dist/css/bootstrap.css";
+
+@import (css) url("https://fonts.googleapis.com/css?family=Comfortaa:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic");
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, p, small {
+  .font-weight-light();
+  line-height: 1.5;
+}
+
+a, a:hover {
+  color: inherit;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+header {
+  .navbar {
+    background-color: @primary;
+  }
+  .navbar-brand {
+    img {
+      height: 35px;
+    }
+  }
+}
+
+.app-primary {
+  background-color: @primary;
+}
+
+.text-ice {
+  color: #ffffffcc;;
+}
+
+section.primary {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  .app-primary();
+  .text-white();
+  .title {
+    .mb-4();
+    .text-center();
+    .font-weight-bold()
+  }
+  .subtitle {
+    .mb-0();
+    .text-ice();
+  }
+}
