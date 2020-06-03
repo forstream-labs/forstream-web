@@ -66,7 +66,23 @@ module.exports = (configs) => {
         },
         {
           test: /\.html$/,
-          use: ['html-loader'],
+          use: [{
+            loader: 'html-loader',
+            options: {
+              minimize: isProduction() ? {
+                caseSensitive: true,
+                collapseWhitespace: true,
+                collapseInlineTagWhitespace: true,
+                keepClosingSlash: true,
+                minifyCSS: true,
+                minifyJS: true,
+                removeComments: true,
+                removeScriptTypeAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                useShortDoctype: true,
+              } : false,
+            },
+          }],
           include: path.resolve('client', 'src'),
           exclude: /index\.html$/,
         },
@@ -132,11 +148,7 @@ module.exports = (configs) => {
         whitelist: ['collapse', 'fade', 'show', 'slide', 'active', 'sr-only', 'd-block', 'text-light', 'loading-bar-spinner'],
         whitelistPatterns: [/^bg-/, /^dropdown/, /^carousel/, /^modal/, /^toast/, /^ng/],
       }),
-      new HtmlPlugin({
-        template: path.resolve('client', 'src', 'index.html'),
-        googleApiKey: configs.googleApiKey,
-        googleTagId: configs.googleTagId,
-      }),
+      new HtmlPlugin({template: path.resolve('client', 'src', 'index.html')}),
     ],
   };
 };

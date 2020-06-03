@@ -6,12 +6,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule} from '@angular/router';
 
-// Bootstrap
-import {} from '@ng-bootstrap/ng-bootstrap';
-
-// Font Awesome
-import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
-
 // Third party libraries
 import {LoadingBarHttpClientModule} from '@ngx-loading-bar/http-client';
 import {LoadingBarRouterModule} from '@ngx-loading-bar/router';
@@ -54,7 +48,6 @@ import {NotFoundComponent} from '@components/not-found/not-found.component';
     ReactiveFormsModule,
     RouterModule.forRoot(AppRoutes.listRoutes()),
     // Third party
-    FontAwesomeModule,
     LoadingBarHttpClientModule,
     LoadingBarRouterModule,
     NgxPageScrollModule,
