@@ -4,10 +4,10 @@
   "version": "0.0.2",
   "private": true,
   "homepage": "https://forstream.io",
-  "author": {
-    "name": "Forstream team",
-    "email": "contact@forstream.io",
-    "url": "https://forstream.io"
+  "author": "Forstream team <contact@forstream.io> (https://forstream.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/forstream/forstream-web.git"
   },
   "sideEffects": [
     "*.less",

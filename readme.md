@@ -1,9 +1,3 @@
-## Installing dependencies ##
-
-````
-npm install
-````
-
 ## Building for development environment ##
 
 ````
@@ -14,12 +8,6 @@ npm run build
 
 ````
 npm run build-prod
-````
-
-## Running the project ##
-
-````
-npm run start
 ````
 
 ## Releasing a new version ##
