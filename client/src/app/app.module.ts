@@ -18,6 +18,7 @@ import {AppRoutes} from '@app/app.routes';
 // Components
 import {AppComponent} from '@app/app.component';
 import {HeaderComponent} from '@components/header/header.component';
+import {FooterComponent} from '@components/footer/footer.component';
 import {LandingPageComponent} from '@components/landing-page/landing-page.component';
 import {TermsComponent} from '@components/terms/terms.component';
 import {PrivacyComponent} from '@components/privacy/privacy.component';
@@ -59,6 +60,7 @@ import {NotFoundComponent} from '@components/not-found/not-found.component';
     // Components
     AppComponent,
     HeaderComponent,
+    FooterComponent,
     LandingPageComponent,
     TermsComponent,
     PrivacyComponent,

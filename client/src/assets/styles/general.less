@@ -1,19 +1,34 @@
 @import (less, reference) "~bootstrap/dist/css/bootstrap.css";
 
-@import (css) url("https://fonts.googleapis.com/css?family=Comfortaa:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic");
+@import (css) url("https://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic");
 
 html, body {
   height: 100%;
 }
 
 body {
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, p, small {
   .font-weight-light();
   line-height: 1.5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 a, a:hover {
@@ -32,6 +47,16 @@ header {
     img {
       height: 35px;
     }
+  }
+}
+
+footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #35363a;
+  color: @white;
+  li {
+    .mb-3();
   }
 }
 

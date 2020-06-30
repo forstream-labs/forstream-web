@@ -1,6 +1,7 @@
 import '@assets/img/favicon.ico';
 import '@assets/img/logo-og.png';
 import '@assets/img/logo-header.png';
+import '@assets/img/download-google-play.png';
 
 import '@assets/styles/styles.less';
 import 'bootstrap/dist/css/bootstrap.css';
